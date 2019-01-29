@@ -13,8 +13,8 @@ class PythonOrgSearch(unittest.TestCase):
         self.browser.get("https://wizzair.com/#/")
 
     #  tearDown() lets us clean the values initialized at the beginning of test via setUp() method.
-    # def tearDown(self):
-    #     self.browser.quit()
+    def tearDown(self):
+        self.browser.quit()
 
     # Testcase
     def test_wizzair_com_email_register(self):
